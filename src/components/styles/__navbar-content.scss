@@ -1,5 +1,10 @@
 @import 'src/styles/variables';
 
+* {
+	text-decoration: none;
+	color: $text-primary;
+}
+
 .navbar-content {
 	position: absolute;
 	padding: 24px;
@@ -36,7 +41,6 @@
 li {
 	position: relative;
 	cursor: pointer;
-	text-decoration: none;
 }
 
 li:after {
@@ -58,12 +62,12 @@ li:focus:after {
 
 
 .navbar-content > Button.navbar-content_button-outlined {
-	border-color: $primary-page_border-color;
 	border-radius: 12px;
 	color: $text-primary;
 	height: 45px;
 	width: 200px;
 	margin-right: 24px;
+	border: 2px solid $primary-page_border-color;;
 
 	font-size: 20px;
 	text-transform: none;
